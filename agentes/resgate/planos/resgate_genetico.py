@@ -1,7 +1,7 @@
 import heapq
 from copy import deepcopy
-from agentes.resgate.planos.algoritmo_genetico import Otimizador
 from agentes.utils.problema import Problema
+from agentes.resgate.planos.otimizador_genetico.otimizador import Otimizador
 
 class PlanoResgateGenetico:
     """Plano de resgate das vítimas potencializado com algoritmo genético.
