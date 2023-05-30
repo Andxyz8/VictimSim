@@ -1,7 +1,6 @@
 import sys
 import os
 
-
 ## importa classes
 from environment import Env
 
@@ -30,16 +29,17 @@ def main(data_folder_name):
     # Run the environment simulator
     env.run()
 
+data_folder_name = "./data_folder/"
 
 if __name__ == '__main__':
     # To get data from a different folder than the default called data pass it by the argument line
 
     if len(sys.argv) > 1:
-        data_folder_name = sys.argv[1]
+        data_folder_name += sys.argv[1]
     else:
-        data_folder_name = "data"
-        # data_folder_name = "data_treino1"
-        # data_folder_name = "TESTE 2"
-        # data_folder_name = "TESTE 3"
+        data_folder_name += "data"
+        # data_folder_name += "data_treino1"
+        # data_folder_name += "TESTE 2"
+        # data_folder_name += "TESTE 3"
 
     main(data_folder_name)
